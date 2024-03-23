@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO LIST</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <p class="Logo">Todo List <i class="ri-calendar-todo-line Logo"></i></p>
+      <div class="input-container">
+        <input
+          type="text"
+          class="js-todo-list-input todo-input"
+          placeholder="Input new list"
+          onkeyup="
+          addOnEnter(event.key);
+          "
+        />
+        <input type="date" class="js-date-input todo-date-input" />
+        <button
+          class="add js-add-button"
+          onclick="
+                    addTodo();
+                "
+        >
+          ADD
+        </button>
+      </div>
+
+      <div class="display js-display-section"></div>
+    </div>
+
+    <script src="script/todoList.js"></script>
+  </body>
+</html>

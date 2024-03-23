@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  background-color: rgba(138, 132, 132, 0.527);
+  width: 730px;
+  height: fit-content;
+  margin: 100px auto;
+  padding: 20px 20px;
+  border: 2px solid black;
+}
+
+.Logo{
+    color: rgba(255, 255, 255, 0.911);
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.input-container,
+.display {
+  display: grid;
+  grid-template-columns: 300px 200px 150px;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.todo-input,
+.todo-date-input{
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #b3b3b3;
+    border-radius: 5px;
+    outline: none;
+}
+
+.add,
+.delete {
+  color: white;
+  background-color: #4caf50;
+  border: none;
+  padding: 6px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in;
+}
+
+.add:hover,
+.delete:hover {
+  background-color: black;
+}
+
+.color {
+  background-color: rgba(238, 49, 49, 0.897);
+}
