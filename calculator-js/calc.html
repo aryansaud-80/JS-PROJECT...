@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My calculator</title>
+    <link
+      rel="shortcut icon"
+      href="images/favicon_calc.webp"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style/calc.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="sub-container">
+        <div class="display js-display">
+          <p>0</p>
+        </div>
+        <div class="first-row">
+          <button
+            class="bg-grey"
+            style="width: 115px"
+            onclick="clearCalculation();"
+          >
+            c
+          </button>
+          <button
+            class="bg-grey color-yellow"
+            onclick="calculate('/'); displayOutput();"
+          >
+            <i class="ri-divide-line"></i>
+          </button>
+          <button
+            class="bg-grey color-yellow"
+            onclick="calculate('*'); displayOutput();"
+          >
+            x
+          </button>
+        </div>
+        <div class="second-row">
+          <button class="bg-black" onclick="calculate('7'); displayOutput();">
+            7
+          </button>
+          <button class="bg-black" onclick="calculate('8'); displayOutput();">
+            8
+          </button>
+          <button class="bg-black" onclick="calculate('9'); displayOutput();">
+            9
+          </button>
+          <button
+            class="bg-grey color-yellow"
+            onclick="calculate('-'); displayOutput();"
+          >
+            <i class="ri-subtract-line"></i>
+          </button>
+        </div>
+        <div class="third-row">
+          <button class="bg-black" onclick="calculate('4'); displayOutput();">
+            4
+          </button>
+          <button class="bg-black" onclick="calculate('5'); displayOutput();">
+            5
+          </button>
+          <button class="bg-black" onclick="calculate('6'); displayOutput();">
+            6
+          </button>
+          <button
+            class="bg-grey color-yellow"
+            onclick="calculate('+'); displayOutput();"
+          >
+            <i class="ri-add-line"></i>
+          </button>
+        </div>
+        <div class="forth-row">
+          <button class="bg-black" onclick="calculate('1'); displayOutput();">
+            1
+          </button>
+          <button class="bg-black" onclick="calculate('2'); displayOutput();">
+            2
+          </button>
+          <button class="bg-black" onclick="calculate('3'); displayOutput();">
+            3
+          </button>
+          <button class="bg-yellow" onclick="
+          calculation = eval(calculation);
+          displayOutput();">
+            <i class="ri-equal-line"></i>
+          </button>
+        </div>
+        <div class="fifth-row">
+          <button class="bg-black" onclick="calculate('%'); displayOutput();">
+            %
+          </button>
+          <button class="bg-black" onclick="calculate('0'); displayOutput();">
+            0
+          </button>
+          <button class="bg-black" onclick="calculate('.'); displayOutput();">
+            .
+          </button>
+          <button
+            class="bg-yellow"
+            onclick="calculate('2.71828183'); displayOutput();"
+          >
+            e
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="script/calc.js"></script>
+  </body>
+</html>

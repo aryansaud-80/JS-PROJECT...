@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style/rock-paper.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Rock paper Scissor</h1>
+      <div class="play-container">
+        <button
+          class="rock"
+          onclick="
+            playGames('rock');
+            "
+        >
+          <img src="images/rock.png" alt="Rock" />
+        </button>
+
+        <button
+          class="scissors"
+          onclick="
+            playGames('scissor');
+            "
+        >
+          <img src="images/scissor.png" alt="Scissors" />
+        </button>
+
+        <button
+          class="paper"
+          onclick="
+            playGames('paper');
+            "
+        >
+          <img src="images/paper.png" alt="Paper" />
+        </button>
+      </div>
+
+      <div class="result-display js-result-display"></div>
+
+      <div class="score js-score"></div>
+
+      <div class="toogle-buttons">
+          <button class="show-results"
+          onclick="
+          showScore();
+          "
+          >Show score
+          </button>
+        <button
+          class="reset-button"
+          onclick="
+        resetResult();
+        "
+        >
+          Reset
+        </button>
+
+      </div>
+    </div>
+
+    <script src="script/rock-paper.js"></script>
+  </body>
+</html>
