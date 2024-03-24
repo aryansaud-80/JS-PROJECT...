@@ -91,6 +91,8 @@ function resetResult() {
     <p>loose=${results.lose}</p>
     <p>draw=${results.draw}</p>
     `;
+  
+    document.querySelector('.js-result-display').innerHTML='';
 }
 
 function showScore() {
