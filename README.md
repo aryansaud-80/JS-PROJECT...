@@ -1,7 +1,7 @@
-# Basic javaScript Projects
+# Basic JavaScript Projects
 
 <h1>
-  PROJECT LIST: 
+  PROJECT LISTS: 
 </h1>
 
 <ul>
